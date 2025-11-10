@@ -7,8 +7,8 @@ public partial class ContratacaoHospedagem : ContentPage
     App PropriedadesApp;
 
     public ContratacaoHospedagem()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
 
         PropriedadesApp = (App)Application.Current;
 
@@ -38,12 +38,16 @@ public partial class ContratacaoHospedagem : ContentPage
             {
                 BindingContext = h
             });
-
         }
         catch (Exception ex)
         {
             await DisplayAlert("Ops", ex.Message, "OK");
         }
+    }
+
+    private async void OnVerRegrasClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new RegrasHotel());
     }
 
     private void dtpck_checkin_DateSelected(object sender, DateChangedEventArgs e)

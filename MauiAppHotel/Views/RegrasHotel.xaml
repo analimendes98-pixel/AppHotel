@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.RegrasHotel"
+             Title="Regras do Hotel"
+             BackgroundColor="{StaticResource Black}">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="Regras do Hotel"
+                   FontSize="32"
+                   FontFamily="NunitoBold"
+                   TextColor="{StaticResource VerdeMusgo}" />
+
+            <Label Text="• Check-in a partir das 14h • Check-out até às 12h • Não é permitido fumar nas suítes • Animais de estimação são permitidos apenas em suítes específicas • Silêncio após 22h é obrigatório • Uso da piscina permitido das 8h às 20h"
+                   FontSize="18"
+                   FontFamily="NunitoLight"
+                   TextColor="{StaticResource VerdeMusgo}"
+                   LineHeight="1.5" />
+
+            <Button Text="Voltar"
+                    Clicked="OnVoltarClicked"
+                    BackgroundColor="{StaticResource VerdeMusgo}"
+                    TextColor="White" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
